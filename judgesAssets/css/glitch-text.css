@@ -1,0 +1,59 @@
+.btn-link {
+    position: relative;
+    display: inline-block;
+    color: #281130;
+    font-size: 24px;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    text-align: center;
+    z-index: 1;
+    cursor: pointer;
+  }
+  .btn-link:before,
+  .btn-link:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  .btn-link:before {
+    background-color: #00ffff;
+    z-index: -1;
+  }
+  .btn-link:after {
+    background-color: #ff00ff;
+    z-index: -2;
+  }
+  .btn-link:hover .link-inner {
+    animation: glitchy 0.3s ease 1;
+  }
+  .btn-link:hover:before {
+    animation: glitchy 0.3s ease 0.3s infinite;
+  }
+  .btn-link:hover:after {
+    animation: glitchy 0.3s ease infinite reverse;
+  }
+  .link-inner {
+    display: block;
+    height: 100%;
+    background-color: #fff;
+    padding: 15px 25px;
+  }
+  
+  @keyframes glitchy {
+    0%   {transform: translate(-2px, 2px);}
+    25%  {transform: translate(-2px, -2px);}
+    50%  {transform: translate(2px, 2px);}
+    75%  {transform: translate(2px, -2px);}
+    100%  {transform: translate(-2px, 2px);}
+}
+
+@keyframes line-glitchy {
+    0%   {transform: translate(-1px, 1px);}
+    25%  {transform: translate(-1px, -1px);}
+    50%  {transform: translate(1px, 1px);}
+    75%  {transform: translate(1px, -1px);}
+    100%  {transform: translate(-1px, 1px);}
+}

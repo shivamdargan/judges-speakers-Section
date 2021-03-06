@@ -1,0 +1,82 @@
+.pic-area{
+    background-image: url('../images/mainframe.gif');
+    /* background-size: 100%; */
+    background-repeat:repeat-y;
+    /* height: 900px; */
+    padding: 24px;
+}
+
+.profile-pic{
+    position: relative;
+    width: 300px!important;
+    height: 180px!important;
+}
+
+.responsive-card{
+    /*\ width: 22rem; */
+    padding: 0px;
+    border: none;
+    width: 111%;
+}
+
+.responsive-row{
+    padding: 2rem;
+}
+
+.responsive-col-md{
+    padding-left: 2rem!important;
+}
+
+@media only screen and (max-width: 600px) {
+    .responsive-card{
+        width: 100%;
+        margin: 5px 0px;
+        margin-bottom: 1rem;
+    }
+
+    .responsive-row{
+        padding: 0.8rem;
+    }
+
+    .responsive-col-md{
+        padding-left: 0rem!important;
+    }
+
+    .profile-pic{
+        width: 100%!important;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .responsive-card{
+        width: 111%;
+    }
+    .responsive-row{
+        padding: 2rem;
+    }
+}
+.card-border{
+    border-top-width: 0px;
+     margin-top: 0px; 
+     border-bottom-width: 0px; 
+     border-left-width: 0px;
+     border-right-width: 0px;
+}
+@media only screen and (min-width:768px) and (max-width:1360px) {
+    .responsive-col-md{
+    padding-right: 18rem!important;
+    padding-bottom: 2rem;
+}
+}
+@media only screen and (min-width:400px) and (max-width:760px) {
+    .responsive-col-md{
+    padding-left: 8rem!important;
+    padding-bottom: 2rem;
+}
+}
+@media only screen and (min-width:350px) and (max-width:550px) {
+    .responsive-col-md{
+    padding-left: 0.5rem!important;
+    padding-bottom: 2rem;
+}
+}
